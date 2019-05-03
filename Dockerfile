@@ -4,7 +4,7 @@ MAINTAINER tombuildsstuff
 RUN mkdir /app
 ADD . /app/
 WORKDIR /app
-RUN go build -o main .
+RUN GO111MODULE=on go build -mod=vendor -o main .
 
 EXPOSE 8080
 CMD [ "/app/main" ]
