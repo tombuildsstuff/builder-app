@@ -16,7 +16,7 @@ The application is a Go binary - but to be able to deploy this easily on Azure w
 tombuildsstuff/builder-app:latest
 ```
 
-More information on how to debug the application [can be found here](debugging-the-application.html).
+More information on how to debug the application [can be found here](debugging-the-application.md).
 
 ## Challenges
 
