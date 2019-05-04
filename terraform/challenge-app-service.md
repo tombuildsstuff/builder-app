@@ -13,9 +13,7 @@ We're going to use [HashiCorp Terraform](https://terraform.io) and the [Terrafor
 
 ## Getting Started with Terraform
 
-If you've not used Terraform before, this section should give you a quick overview.
-
-TODO a link to a guide about how to get started with Terraform, plan, apply, destroy etc
+If you've not used Terraform before, you may wish to take a look at [the Getting Started with Terraform and Azure guide](https://learn.hashicorp.com/terraform/azure/intro_az).
 
 ### Provisioning the Resources in Azure
 
