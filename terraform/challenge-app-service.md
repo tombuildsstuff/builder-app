@@ -52,7 +52,7 @@ The important things to note here:
 
 * The SKU must be a Tier of `Standard` and a Size of `S1`.
 * The App Service Plan must have a `kind` of `Linux`.
-* The App Service Plan must be `reserved` (which can be configured in the `properties` block).
+* The App Service Plan must be `reserved` (reserved = true).
 
 > App Service
 
