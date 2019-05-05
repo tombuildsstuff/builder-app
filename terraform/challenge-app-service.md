@@ -62,8 +62,8 @@ The Terraform Resource for an App Service is `azurerm_app_service` - for which [
 
 The important things to note here:
 
-* The Application can be found as the Docker Image `tombuildsstuff/builder-app`.
-* The `app_command_line` should be set to an empty string (since this is set within the Docker Container).
+* The Application can be found as the Docker Image `tombuildsstuff/builder-app` and specified within the `site_config` block using the `linux_fx_version`: `DOCKER|tombuildsstuff/builder-app:latest`.
+* The `app_command_line` within the `site_config` block should be set to an empty string (since this is set within the Docker Container).
 * We need to set the Environment Variables for the Redis Host (`REDIS_HOST`) and the Redis (Access) Key (`REDIS_KEY`) - which can be set using [the `app_settings` block](https://www.terraform.io/docs/providers/azurerm/r/app_service.html#app_settings).
 * As we're using a Docker Container (which doesn't require persistence) the App Setting `WEBSITES_ENABLE_APP_SERVICE_STORAGE` must be set to `false`.
 * As we're pulling Docker Images from the Docker Hub - the App Setting `DOCKER_REGISTRY_SERVER_URL` must be set to `https://index.docker.io`.
